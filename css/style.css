@@ -1,0 +1,394 @@
+body
+{
+	margin:0px;
+	color:black;
+	background-color:#C8CED8;
+}
+#showcase
+{
+	background-image: url('../images/background.jpg');
+	width:100%;
+	height:800px;
+	overflow:hidden;
+	background-position:center center;
+	right: 100px;
+	background-size: cover;
+	background-repeat:no-repeat;
+	margin-bottom:50px;
+}
+/*the logo of Actollo*/
+#topBlock img
+{
+	max-height:90px;
+	width:auto;
+	position: absolute;
+	left:6%;
+	top:1px;
+}
+
+#topBlock
+{
+	
+	border:3px solid #FFF;
+	border-top:0;
+	border-left:0;
+	border-right:0;
+}
+
+#topBlock a{
+
+	float:right;
+	color:#fff;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+	text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;  
+	text-decoration: none;
+	font-size:27px;
+	margin-right:30px;
+	padding-left:20px;
+	padding-right:20px;
+/*	background-color: red;*/
+	margin-top:-10px;
+	padding-top:15px;
+	padding-bottom:22px;
+	font-family: MuseoSans-500,Helvetica,sans-serif;
+}
+#topBlock a:hover{
+	color:yellow;
+}
+
+#topBlock ul{
+
+	background-color:#77A3B9;
+	height:32px;
+	margin:0px;
+	padding-top:35px;
+	padding-right:40px;
+	padding-bottom:25px;
+
+	/*text-align:right;*/
+}
+
+#topBlock li{
+
+	display:inline;
+}
+.active {
+  background-color: #DCDBE0;
+  color: white;
+}
+#bigQuote
+{
+	float:left;
+	color:white;
+	line-height:30px;
+	font-family: 'Permanent Marker', cursive;
+	font-size: 100px;
+	margin-left:100px;
+	margin-bottom:0px;
+}
+#workoutButton {
+	float:left;
+	clear:both;
+	margin-top:-50px;
+	margin-left:120px;
+	margin-bottom:0px;
+	background-color: #4CAF50; /* Green */
+	border:2px solid #595752;
+	border-radius:10px;
+	padding: 15px 32px;
+	text-align: center;
+	color:white;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 20px;
+}
+
+#workoutButton:hover {
+	background-color:green;
+
+}
+/*ABOUT SECTION*/
+#aboutContent
+{
+	display:inline-block;
+	background-color:#3c425c;
+	color:white;
+	margin-right:auto;
+	margin-top:30px;
+	margin-left:auto;
+	padding-left:15px;
+	padding-top:15px;
+}
+#aboutContent a
+{
+	color:blue;
+	
+}
+#aboutContent p
+{
+	margin-left:10%;
+	width:30%;
+}
+#aboutContent h1
+{
+
+	margin-left:13%;
+	width:30%;
+}
+#first
+{
+	
+	margin-left:10%;
+	width:10%;
+	clear:both;
+}
+#aboutContent ul
+{
+	float:left;
+}
+
+#moreText 
+{
+	margin-left: auto ;
+  	margin-right: auto ;
+  	width:70%;
+	clear:both;
+	font-size:17px;
+}
+#moreText p
+{
+	color:black;
+}
+#moreText h1
+{
+	text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;  
+}
+#food
+{
+	padding-right:30px;
+	width:40%;
+	float:left;
+	color:#ff9670;
+	margin-bottom:100px;
+}
+#exercise
+{
+	margin-bottom:100px;
+	width:40%;
+	color:#82e6ff;
+	float:left;
+}
+#goodRest
+{
+	padding-right:30px;
+	width:40%;
+	color: #82a5ff;
+	clear:both;
+	float:left;
+	margin-bottom:120px;
+}
+#hydration
+{
+
+	width:40%;
+	color:#82ffea;
+	float:left;
+}
+
+#main-footer{
+	clear:both;
+	background: #333;
+	color: #fff;
+	text-align: center;
+	padding: 20px;
+}
+
+/*body{
+	background-color:; #f4f4f4;
+	color: #555;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:16px;
+	line-height:1.6em;
+	margin:0;
+}
+
+#block{
+	float:left;
+	font-family:"Times New Roman", Times, serif;
+	font-size:20px;
+	line-height:2.5em;
+	width:40%;
+	background: #333;
+	color: #fff;
+	padding:20px;
+	box-sizing: border-box;
+
+	
+}
+.container{
+	width:90%;
+	margin:auto;
+	overflow:hidden;
+}
+.container header{
+	background-color: white;
+	padding-bottom: 500px;
+}
+
+
+#showcase {
+
+	background-image: url('../images/realMe.jpg');
+	background-position:center;
+	min-height: 900px;
+	margin-bottom:50px;
+	text-align:center;
+	background-repeat:no-repeat;
+	
+}
+
+#showcase a{
+	color:#E0C2BB;
+	text-decoration: none;
+	font-size:40px;
+	padding-right:15px;
+}
+
+#links ul{
+	background-color:#996633;
+	padding-top:20px;
+	padding-bottom:20px;
+	
+	font-family:DejaVu Sans Mono, monospace;
+	color:black;
+
+}
+
+#showcase li{
+	display:inline;
+}
+#showcase a:hover{
+	color:red;
+	font-size:50px;	
+}
+#showcase img {
+    margin-top:200px;
+}
+
+
+#main{
+	float:left;
+	width:60%;
+	padding:0 30px;
+	box-sizing: border-box;
+	font-size:30px;
+	line-height:1.5em;
+}
+
+
+#projectOpen {
+	margin-top:200px;
+	float:center;
+	font-family:"Times New Roman", Times, serif;
+	color: #fff;
+	font-size: 50px;
+	background-color:#997651;
+	text-align: center;
+	padding: 50px 50px;
+	margin-bottom:60px;
+	margin-left:40px;
+	margin-right:40px;
+
+}
+#text{
+	float:left;
+	background-color:grey;
+	font-size:20px;
+	width:50%;
+	height:300px;
+	margin-left:30px;
+	margin-bottom:100px;
+	padding:30px 30px 30px 30px;
+	color:white;
+}
+.car img{
+	float: right;
+	width:18%;
+	margin-right:140px;
+	border-radius:10px;
+	height:auto;
+}
+.Vrobotics video{
+	float: right;
+	width:25%;
+	margin-right:80px;
+	border-radius:10px;
+	height:auto;
+}
+.Mrobotics img{
+	float: right;
+	width:14%;
+	margin-right:160px;
+	border-radius:10px;
+	height:auto;
+	image-orientation: from-image;
+}
+.graph img{
+	float: right;
+	width:30%;
+	margin-right:140px;
+	border-radius:10px;
+	height:auto;
+}
+#sidebar{
+	float:right;
+	font-family:"Times New Roman", Times, serif;
+	font-size:60px;
+	font-weight:bold;
+	line-height:1.5em;
+	width:40%;
+	background: #333;
+	color: #fff;
+	padding:20px;
+	box-sizing: border-box;
+	
+}
+#contacts{
+	background-image: url('../images/wood.jpg');
+	background-position:center;
+	min-height: 900px;
+	max-width: 1900px;
+	margin-bottom:50px;
+	text-align:center;
+	
+}
+#main-footer{
+	background: #333;
+	color: #fff;
+	text-align: center;
+	padding: 20px;
+	margin-top:10000px;
+}
+@media(max-width:600px){
+	#main{
+		width:100%;
+		float:none;
+	}
+	#sidebar{
+		width:100%;
+		float:none;
+	}
+	#car{
+		width:100%;
+		float:none;
+	}
+}*/

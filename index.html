@@ -8,15 +8,25 @@
 
 	<title>Danny Shin</title>
 </head>
-<body>
+<boFFy>
 	<section id="showcase">
 		<div id="topBlock">
 				<ul>
-					<img  src="images/logo.JPG" alt="Cannot locate the image" > </img>
-					<li><a href="resume.pdf" target="_blank">Resume</a></li>
-					<li><a id="aboutButton" style="cursor: pointer;" target="aboutMe">About</a></li>
-					<li><a id="projectButton" style="cursor: pointer;" target="projects">Experience</a></li>
-					<li><a href="index.html" class="active"> Home</a></li>
+					<p id="name">Danny Shin</p>	
+					<li><a id="toplink" href="resume.pdf" target="_blank"  class="active">Resume</a></li>
+					<li><a class="active" id="aboutButton" style="cursor: pointer;" target="aboutMe">About</a></li>
+					<div class="dropdown">
+						<li>
+							<a id="toplink" class="active" style="cursor: pointer;" >
+								Experience
+							</a>
+						</li>
+						<div class="dropdown-content">
+						 	<a  id="softwareButton" style="cursor: pointer;">Software</a>
+						    <a  id="hardwareButton" style="cursor: pointer;">Hardware</a>
+						</div>
+					</div>
+					<li><a id="toplink" href="index.html" class="active"> Home</a></li>
 				</ul>
 		</div>
 		<div id="bigQuote">
@@ -25,37 +35,42 @@
 			<p>away...</p>
 			<!-- <h4>Great.</h4> -->
 		</div>
-				<button onclick="location.href='mailto:shindannybms@gmail.com'" id="workoutButton" type="button">
-    Email Me</button>
+				<button onclick="location.href='mailto:shindannybms@gmail.com'" id="emailButton" type="button">
+    Email Me!</button>
 		
 		
 		
 	</section>
 
+
 	<section id="aboutMe">
 		<div id="aboutContent">
-			<h1>About Me</h1>
-			<p>I am a baschelors engineering student at
-			<a href="https://uwaterloo.ca/engineering/" target=" " > University of Waterloo.</a>
-			I specialize in Mechatronics engineering that covers mechanical, electrical, and software disciplines. My wide range of specialty allows me to understand how systems work together to the bits and gears.
+			<h1>Profile</h1>
+			<p id="statement"><i><u>Curious mind, merciless in the pool, but bribable with Korean BBQ</u></i></p> 
+			<p id="content">I am a student at
+			<a href="https://uwaterloo.ca/engineering/" target=" " > University of Waterloo</a>, studying Mechatronics Engineering. This program incorporates mechanical, electrical, and software disciplines, allowing me to have a thorough understanding of how systems work together down to the bits and gears.
 			<br> <br>I have a strong passion in innovation and development. Designing and creating new technology and systems is what sparks my interests and creative mind. I strongly value continuous learning and growing as a professional developer. 
-				Some technologies I am experienced with:
 			</p>
-			<ul id="first">
-				<li>Javascript</li>
-				<li>HTML</li>
-				<li>CSS</li>
-				<li>jQuery</li>
-				<li>node.JS</li>
-				<li>Python</li>
-				<li>firebase</li>
-			</ul>
-			<ul>
-				<li>Autocad</li>
-				<li>Solidworks</li>
-				<li>Maylab</li>
-				<li>Simulink</li>
-			</ul>
+			<img src="images/realMe.jpg" id="profileImage" alt="Cannot locate the image"></img>	
+			<div id="techs">
+				<p id="techTitle">Languages and Technologies</p>
+				<ul id="firstList">
+					<li>Javascript</li>
+					<li>HTML</li>
+					<li>CSS</li>
+					<li>jQuery</li>
+					<li>node.JS</li>
+					<li>Python</li>
+				</ul>
+				<ul>
+					<li>firebase</li>
+					<li>Autocad</li>
+					<li>Solidworks</li>
+					<li>MATLAB</li>
+					<li>Simulink</li>
+				</ul>
+			</div>
+
 		</div>
 	</section>
 
@@ -63,7 +78,8 @@
 	<div id="projects">
 <!-- SOFTWARE -->
 		<div id="softwareProjects">
-			<div class="tictactoe">
+			<h3>Sofware Projects</h3>
+			<div class="project">
 				<div id="text">
 					<h1>
 						Featured Project
@@ -79,11 +95,48 @@
 						This robot successfully completed the maze following the black line.
 					</p>
 				</div>
-			<img src="images/car1.jpg" id="carImage" alt="Cannot locate the image"></img>	
+			<!-- <img src="images/car1.jpg" id="carImage" alt="Cannot locate the image"></img>	 -->
+			</div>
+			<div class="project">
+				<div id="text">
+					<h1>
+						Featured Project
+					</h1>
+					<h2>
+						Tic Tac Toe Game
+					</h2>
+					<small>
+						2017 - October
+					</small>
+					<p>
+						By utilizing embedded software (Arduino) and electrical hardware components such as LDR, my team and I designed and successfully built a line-tracking car. This project required intricate wiring work in systems such as the H-bridge configuration.
+						This robot successfully completed the maze following the black line.
+					</p>
+				</div>
+			<!-- <img src="images/car1.jpg" id="carImage" alt="Cannot locate the image"></img>	 -->
 			</div>
 		</div>
 <!--HARDWARE  -->
-		<div id="harwareProjects"></div>
+		<div id="hardwareProjects">
+			<p>helloo</p>
+			<p>helloo</p>
+			<p>helloo</p>
+			<p>helloo</p>
+			<p>helloo</p>
+			<p>helloo</p>
+			<p>helloo</p>
+			<p>helloo</p>
+			<p>helloo</p>
+			<p>helloo</p>
+			<p>helloo</p>
+			<p>helloo</p>
+			<p>helloo</p>
+			<p>helloo</p>
+			<p>helloo</p>
+			<p>helloo</p>
+			<p>helloo</p>
+			<p>helloo</p>
+		</div>
 	</div>
 
 	<!-- script tags for JS and jquery -->
@@ -92,11 +145,9 @@
 	
 	<!-- done with tags to scripts -->
 	<footer id= "main-footer">
-
 			<p> 
 				Copyright &copy; 2018 Danny Shin
 			</p>
-
 	</footer>
 </body>
 </html>

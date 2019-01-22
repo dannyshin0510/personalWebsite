@@ -188,6 +188,13 @@ body
 	margin-top:60px;
 	margin-left:13%;
 	border-radius:4px;
+
+	
+        border: solid 2px #CCC;
+    -moz-box-shadow: 10px 10px 0px #525252;
+    -webkit-box-shadow: 10px 10px 0px #525252;
+        box-shadow: 10px 10px 10px #525252;
+        
 }
 
 #statement
@@ -251,6 +258,10 @@ body
 	background-color: #58B1DD;
 	margin-top:100px;
 }
+#projects
+{
+	margin-bottom:100px;
+}
 #projects h3
 {
 	font-size:4vw;
@@ -276,6 +287,28 @@ body
 	float:left;
 	height:auto;
 	width:53%;
+	max-height:90%;
+	margin-left:5vw;
+	margin-top:4vh;
+	border:2px solid #595752;
+}
+#uniqueImage
+{
+	float:left;
+	height:auto;
+	width:40%;
+	max-height:90%;
+	margin-left:9vw;
+	margin-top:4vh;
+	border:2px solid #595752;
+}
+/*Only for the video option for*/
+.project video
+{
+	float:left;
+	height:auto;
+	width:53%;
+	max-height:95%;
 	margin-left:5vw;
 	margin-top:4vh;
 	border:2px solid #595752;

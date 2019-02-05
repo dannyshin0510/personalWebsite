@@ -50,7 +50,7 @@ body
 	padding-bottom:12px;
 	font-family: MuseoSans-500,Helvetica,sans-serif;
 }
-#toplink:hover,  #aboutButton:hover{
+#toplink:hover, #aboutButton:hover{
 	color:yellow;
 }
 

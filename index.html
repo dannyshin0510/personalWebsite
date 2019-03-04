@@ -39,21 +39,32 @@
 	<section id="aboutMe">
 		<div id="aboutContainer">
 			<div id="aboutContent">
-				<h1>So, Who is this guy?</h1>
+				<h1>So, <a id="redC">Who</a> is this guy?</h1>
 				<p id="content">I am a student at
-				<a href="https://uwaterloo.ca/engineering/" target=" " > University of Waterloo</a>, studying Mechatronics Engineering. This program incorporates mechanical, electrical, and software disciplines, allowing me to have a thorough understanding of how systems work together down to the bits and gears.
+				<a id="href="https://uwaterloo.ca/engineering/" target=" " > University of Waterloo</a>, studying Mechatronics Engineering. This program incorporates mechanical, electrical, and software disciplines, allowing me to have a thorough understanding of how systems work together down to the bits and gears.
 				<br> <br>I have a strong passion in innovation and development. Designing and creating new technology and systems is what sparks my interests and creative mind. I strongly value continuous learning and growing as a professional developer. 
 				</p>
 				<img src="images/profile4.jpeg" id="profileImage" alt="Cannot locate the image"></img>	
 				
 				
 				<div id="skillImages">
-					<div id="skillBlock">
+					<div id="skillBlock" style="background: #FFFC7F">
 						<img src="images/programming.png" id="tech" alt="Cannot locate the image"></img>
 						<h2>Programming</h2>
+						<p>I have been coding for 5 years now, and I really love it! I am currently focusing on web-related applications as well as Data Structures on 'C' and SQL. </p>
 					</div>
-					<img src="images/robot.png" id="tech" alt="Cannot locate the image"></img>
-					<img src="images/design.png" id="tech" alt="Cannot locate the image"></img>
+					<div id="skillBlock" style="background: #fcf96f">
+						<img src="images/robot.png" id="tech" alt="Cannot locate the image"></img>
+						<h2>Robotics/Embedded</h2>
+						<p>Beep Bop!? I have been involved in robotics teams and various embedded applications in the past. Bringing your code to real life sure is challenging! </p>
+					</div>
+						<div id="skillBlock" style="background: #f7f356">
+						<img src="images/design.png" id="tech" alt="Cannot locate the image"></img>
+						<h2>Technical Designs</h2>
+						<p>
+							There is nothing more satisfying than designs with their exact tolerance measurements! I have proficient experience working with AutoCAD and SOLIDWORKS creading 2D, 3D, and Assembly designs.
+						</p>
+					</div>
 				</div>
 
 				<div id="skills">
@@ -123,15 +134,17 @@
 
 					</div>
 				</div>
-
-
-
-
-
 			</div>
 			</div>
 			
 		</div>
+	</section>
+	<section id="goodbye">
+		<h1>
+			<a id="redC">Ready</a> to make things happen?
+		</h1>
+		<button onclick="location.href='mailto:d24shin@uwaterloo.ca'" id="byeButton" type="button">
+    Let's talk!</button>
 	</section>
 <!-- PROJECTS -->
 	<div id="projects">
@@ -245,6 +258,9 @@
 	<footer id= "main-footer">
 			<p> 
 				Copyright &copy; 2018 Danny Shin
+			</p>
+			<p>
+				*This website was created by Danny Shin using JS, HTML, CSS, jQuery, and various image sources.
 			</p>
 	</footer>
 </body>

@@ -310,8 +310,8 @@ body{
 	width:90%;
 	height:auto;
 	border: 1px solid #ccc;
-  	box-shadow: 1px 1px 10px grey inset,
-              -1px -1px 2px #fff inset;
+  	box-shadow: 4px 4px 10px #3d4c61 inset,
+              -4px -4px 3px #3d4c61 inset;
   	border-radius: 3px/6px;  
   	padding-bottom:30px;
 

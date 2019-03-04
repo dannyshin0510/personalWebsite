@@ -83,7 +83,7 @@ body
 
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
-	margin-top:1.8vw;
+	margin-top:2vw;
   display: none;
   position: absolute;
   background-color: #f9f9f9;
@@ -121,6 +121,34 @@ body
 	text-align: center;
 	margin-top: 9vw;
 }
+#projectCover
+{
+	background-image: url('../images/team.jpg');
+	width:100%;
+	height:45vw;
+	overflow:hidden;
+	margin-bottom:1vw;
+  	background-attachment: fixed;
+  	background-position: center center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+ }
+#intro
+{
+	color:white;
+	font-family: 'Permanent Marker', cursive;
+	font-size: 3vw;
+	text-align: center;
+	width:56%;
+	margin-top:30vw;
+	background-color:#3d4c61;
+	padding-top:1%;
+	padding-bottom:1%;
+	border-top-right-radius:4vw;
+	border-bottom-right-radius:4vw;
+	border:2px solid #FFF;
+	border-left:none;
+}
 #redC
 {
 	color:red;
@@ -133,7 +161,7 @@ body
 {
 	font-family: MuseoSans-500,Helvetica,sans-serif;
 	font-size: 2vw;
-	margin-top:5vw;
+	margin-top:3vw;
 	margin-bottom:3vw;
 }
 #emailButton {
@@ -151,7 +179,7 @@ body
 	width:11vw;
 	position:absolute;
 	left:75%;
-	margin-top:13%;
+	margin-top:17%;
 }
 
 #emailButton:hover {
@@ -258,7 +286,6 @@ body
 {
 	margin-top:2vw;
 	height:10vw;
-
 	margin:auto;
 }
 #content
@@ -330,8 +357,6 @@ body{
 	width:0px;
 	background:#6adcfa;
 	border-radius:3px;
-	-moz-border-radius:3px;
-	-webkit-border-radius:3px;
 	float: left;
 }
 
@@ -339,18 +364,6 @@ body{
     min-height: 100%;
     height: 100vh;
 }
-.skill-bar-percent {
-    position:absolute;
-    right:10px;
-    top:0;
-    font-size:11px;
-    height:35px;
-    line-height:35px;
-    color:#444;
-    color:rgba(0, 0, 0, 0.4);
-}
-
-
 
 #goodbye
 {
@@ -358,8 +371,7 @@ body{
 	width:100%;
 	height:35vw;
 	overflow:hidden;
-	margin-bottom:1vw;
-  	/*background-attachment: fixed;*/
+	margin-top:5vw;
   	background-position: center center;
   	background-repeat: no-repeat;
   	background-size: cover;
@@ -385,7 +397,6 @@ body{
 	width:11vw;
 	margin-left:44%;
 	margin-top:4%;
-	
 }
 #aboutContent ul
 {
@@ -400,6 +411,7 @@ body{
 	color: #fff;
 	text-align: center;
 	padding: 2vw;
+	margin-top:5%;
 }
 
 #softwareProjects
@@ -462,6 +474,13 @@ body{
 	border:2px solid #595752;
 }
 /*Only for the video option for*/
+#pageImage
+{
+	width:100%;
+	height:50vw;
+	overflow:hidden;
+	margin-bottom:1vw;
+}
 .project video
 {
 	float:left;

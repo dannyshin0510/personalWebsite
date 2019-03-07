@@ -224,7 +224,15 @@ body
 {
   	height:110vw;
   	margin:auto;
-	background-color: #F5f5f5;
+	background-image: url('../images/wall1.jpg');
+	width:100%;
+	height:auto;
+	overflow:hidden;
+	margin-bottom:-1vw;
+ 
+  	background-position: center center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
 	color:#3d4c61
 	font-size:1.3vw;
 	font-family: MuseoSans-500,Helvetica,sans-serif;
@@ -249,7 +257,7 @@ body
 	float:left;
 	width:16vw;
 	height:auto;
-	margin-top:2vw;
+	margin-top:3vw;
 	margin-left:14vw;
 	border-radius:4px;
     border: solid 2px #CCC;
@@ -293,7 +301,7 @@ body
 #content
 {
 	float:left;
-	margin-top:4%;
+	margin-top:6%;
 	margin-left:5%;
 	width:50%;
 }
@@ -311,10 +319,6 @@ body{
 	float:left;
 	width:90%;
 	height:auto;
-	border: 1px solid #ccc;
-  	box-shadow: 4px 4px 10px #3d4c61 inset,
-              -4px -4px 3px #3d4c61 inset;
-  	border-radius: 3px/6px;  
   	padding-bottom:30px;
 
 }

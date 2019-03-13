@@ -21,6 +21,7 @@ body
 {
 	display:none;
 }
+
 .topBlock p
 {
 	color:white;
@@ -737,11 +738,11 @@ body{
 		height:20vw;
 	}
 
-	  #iconImage
-	  {
-	  	width:6vw;
-	  	margin-top:0vw;
-	  }
+	 #iconImage
+	 {
+	 	width:6vw;
+	 	margin-top:0vw;
+	 }
 	.skillBlock p
 	{
 		width:50%;
@@ -774,14 +775,19 @@ body{
 	  }
 	  .topBlockresponsive ul {
 	  	padding-top:2vw;
+	  	padding-bottom:2vw;
 	  	margin-top:0vw;
 	  	list-style-type:none;
 	  }
+	  .topBlockresponsive img
+	  {
+	  	display:none;
+	  }
 	   .topBlockresponsive li
 	  {
-	  		margin-bottom:1vw;
+	  	margin-bottom:1vw;
 	  	  display:block;
-	  	  text-align: right;
+	  	  text-align: center;
 	  	  margin-right:3vw;
 	  	  list-style-type:none;
 	  }
@@ -798,7 +804,6 @@ body{
 	  	margin-top:-1vw;
 	  	width:auto;
 	  }
-	  
 }
 
 

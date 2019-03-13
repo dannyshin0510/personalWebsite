@@ -10,9 +10,6 @@ $('#hardwareButton').click(function() {
     $('html, body').animate({scrollTop: $("#hardwareProjects").offset().top -30 }, 'slow');
 });
 
-
-
-
 var skillsDiv = $('#skills');
 
 $(window).on('scroll', function(){

@@ -219,7 +219,6 @@ body
 
 #aboutContent
 {
-  	
 	background-image: url('../images/wall1.jpg');
 	width:100%;
 	height:auto;
@@ -233,7 +232,7 @@ body
 {
 	display:grid;
 	grid-template-columns:repeat(3,1fr);
-	grid-gap:10px;  
+	grid-gap:5px;  
 	grid-template-areas:
 		"title title title"
 		"aboutWord aboutWord aboutImage"
@@ -273,32 +272,47 @@ body
     -webkit-box-shadow: 10px 10px 0px #525252;
     box-shadow: 10px 10px 10px #525252;  
 }
-#skillBlock
+#content
+{
+	margin-top:6%;
+	margin-left:5%;
+	width:50%;
+}
+/*Yellow bar explaining skills*/
+.skillBlock
 {
 	padding-top:1vw;
-	height:29vw;
-	float:left;
-	width:33.33%;
+	height:30vw;
 	text-align:center;
 }
-#skillBlock p
+.skillBlock p
 {
-	margin-right:3rem;
-	margin-left:3rem;
+	
+	margin:auto;
 }
-#skillImages
+
+.skillImages
 {
-	border-top:solid 5px #525252;
-	border-bottom:solid 5px #525252;
+	border-top:solid 3px #525252;
+	border-bottom:solid 3px #525252;
 	margin-top:10vw;
-	background-color: #FFFC7F;
-	width:100%;
-	height:30vw;
-	float:left;
-	clear:both;
-}
-#skillImages {
 	font-size:1.3vw;
+	display:grid;
+	grid-template-columns:repeat(3,1fr);
+	grid-template-areas:
+		"programming embedded designs"
+}
+#program
+{
+	grid-area:programming;
+}
+#embedded
+{
+	grid-area:embedded;
+}
+#design
+{
+	grid-area:designs;
 }
 #tech
 {
@@ -306,13 +320,7 @@ body
 	height:10vw;
 	margin:auto;
 }
-#content
-{
-	float:left;
-	margin-top:6%;
-	margin-left:5%;
-	width:50%;
-}
+
 
 /*SKILLS BAR ANIMATED!*/
 body{
@@ -328,12 +336,19 @@ body{
 	width:90%;
 	height:auto;
   	padding-bottom:30px;
+  	display:grid;
+	grid-template-columns:repeat(2,1fr);
+	grid-template-areas:
+	"heading heading"
+		"skillsLeft skillsRight"
 
 }
-
+#skills h1
+{
+	grid-area:heading;
+}
 #skillsLeft, #skillsRight
 {
-	float:left;
 	width:37vw;
 	margin-top:5vw;
 	margin-left:5vw;
@@ -341,7 +356,12 @@ body{
 
 #skillsLeft
 {
-	float left;
+	grid-area:skillsLeft;
+
+}
+#skillsRight
+{
+	grid-area:skillsRight;
 }
 
 .skillbar {
@@ -376,7 +396,7 @@ body{
 
 .containers {
     min-height: 100%;
-    height: 100vh;
+    height: 100vw;
 }
 
 #goodbye
@@ -432,12 +452,12 @@ body{
 {
 	background-image: url('../images/softwareBack.jpg');
 	height: 100%; 
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding-bottom:2%;
-}
+  	background-attachment: fixed;
+  	background-position: center;
+ 	background-repeat: no-repeat;
+ 	background-size: cover;
+ 	padding-bottom:2%;
+}	
 #projects
 {
 	margin-bottom:100px;
@@ -461,7 +481,6 @@ body{
 	padding-right:1vw;
 	padding-top:1vw;
 	padding-bottom:1vw;
-	
   	border: 1px solid #ccc;
   	box-shadow: 1px 1px 10px grey inset,
               -1px -1px 2px #fff inset;
@@ -521,6 +540,7 @@ body{
   	background-size: cover;
   	padding-bottom: 2vw;
 }
+/*tablets*/
 @media screen and (max-width:950px)
 {
 	.passport
@@ -535,5 +555,77 @@ body{
 		width:25vw;
 		margin:auto;
 		margin-top:3vw;
+	}
+	#skills
+	{
+		grid-template-areas: 
+		"heading heading"
+		"skillsLeft skillsLeft"
+		"skillsRight skillsRight"
+	}
+	#skills h1
+	{
+		font-size:8vw;
+		margin-bottom:5vw;
+	}
+	#redColor
+	{
+		font-size:8vw;
+		color:red;
+	}
+	#skillsLeft
+	{
+		margin:auto;
+	}
+	#skillsRight
+	{
+		margin:auto;
+	}
+	.skillbar-bar
+	{
+		height:4vw;
+	}
+	.skillbar span 
+	{
+	    display:block;
+	    font-family: MuseoSans-500,Helvetica,sans-serif;
+	    font-size: 2vw;
+	    color:#fff;
+	    background:rgba(0, 0, 0, 0.1);
+	    padding:0 10px;
+	    height:4vw;
+	    line-height:3vw;
+	    border-bottom-left-radius:2px;
+	}
+	.skillbar 
+	{
+		margin-left:-7vw;
+	    position:relative;
+	    display:block;
+	    margin-bottom:4vw;
+	    width:130%;
+	    background:#eee;
+	    height:4vw;
+	    border-radius:3px;
+	    border: 1.2px solid #ccb;
+	}
+}
+/*Mobile (phone) devices*/
+@media screen and (max-width:700px)
+{
+	.skillImages
+	{
+		grid-template-areas: 
+		"programming programming programming"
+		"embedded embedded embedded"
+		"designs designs designs"
+	}
+	#tech
+	{
+		height:20vw;
+	}
+	.skillBlock p
+	{
+		width:50%;
 	}
 }

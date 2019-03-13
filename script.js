@@ -24,5 +24,13 @@ $(window).on('scroll', function(){
     });
   }
 });
+function respBarFunc() {
+  var x = document.getElementById("navBar");
+  if (x.className === "topBlock") {
+    x.className += "responsive";
+  } else {
+    x.className = "topBlock";
+  }
+}
 
 

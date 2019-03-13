@@ -17,8 +17,11 @@ body
   	background-repeat: no-repeat;
   	background-size: cover;
  }
-
-#topBlock p
+.topBlock .icon
+{
+	display:none;
+}
+.topBlock p
 {
 	color:white;
 	font-size:2.8vw;
@@ -27,7 +30,7 @@ body
 	margin-top:-1.9vh;
 }
 
-#topBlock
+.topBlock
 {
 	position:fixed;
 	width:100%;
@@ -37,7 +40,7 @@ body
 	border-right:0;
 }
 
-#toplink, #aboutButton{
+.topBlock a{
 
 	float:right;
 	color:#fff;
@@ -51,16 +54,17 @@ body
 	padding-bottom:1vw;
 	font-family: MuseoSans-500,Helvetica,sans-serif;
 }
-#toplink:hover, #aboutButton:hover{
+.topBlock a:hover{
 	color:yellow;
 }
 
-#topBlock ul{
+.topBlock ul{
 	background-color:rgba(0,0,0,0.3);
 	margin:0px;
 	padding-top:2.2vw;
 	padding-right:1vw;
 	padding-bottom:2vw;
+
 }
 #logo
 {
@@ -70,7 +74,7 @@ body
 	margin-left:3vw;
 	margin-top:-1.7vw;
 }
-#topBlock li{
+.topBlock li{
 	display:inline;
 }
 					
@@ -727,8 +731,69 @@ body{
 	{
 		height:20vw;
 	}
+
+	  #iconImage
+	  {
+	  	width:6vw;
+	  	margin-top:0vw;
+	  }
 	.skillBlock p
 	{
 		width:50%;
 	}
+	  .topBlock ul
+	  {
+	  	height:5vw;
+	  }
+	  .topBlock a
+	  {
+	  	display: none;
+	  }
+	  .topBlock a.icon {
+	    float: right;
+	    display: block;
+	  }
+	  .topBlockresponsive 
+	  {
+	  	height:auto;
+	  	font-size:3vw;
+	  	position: relative;
+	  	margin-bottom:-14vw;
+	  	background-color:rgba(0,0,0,0.3);
+	  }
+	  .topBlockresponsive a.icon {
+	  	display:none;
+	    position: absolute;
+	    right: 0;
+	    top: 0;
+	  }
+	  .topBlockresponsive ul {
+	  	padding-top:2vw;
+	  	margin-top:0vw;
+	  	list-style-type:none;
+	  }
+	   .topBlockresponsive li
+	  {
+	  		margin-bottom:1vw;
+	  	  display:block;
+	  	  text-align: right;
+	  	  margin-right:3vw;
+	  	  list-style-type:none;
+	  }
+	   .topBlockresponsive a
+	  {
+	  	text-decoration: none;
+	  	color:white;
+
+	  }
+	  #logo
+	  {
+	  	height: 7vw;
+	  	margin-left:-3vw;
+	  	margin-top:-1vw;
+	  	width:auto;
+	  }
+	  
 }
+
+

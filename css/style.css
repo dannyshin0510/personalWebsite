@@ -681,6 +681,11 @@ body{
 	{ 
 	  margin-left:0vw;
 	}
+	#intro
+	{
+		max-height: 10vw;
+		font-size:2vw;
+	}
 	.skillImages
 	{
 		grid-template-areas: 

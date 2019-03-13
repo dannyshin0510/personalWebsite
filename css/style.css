@@ -24,7 +24,7 @@ body
 	font-size:2.8vw;
 	position: absolute;
 	left:6.8vw;
-	margin-top:-1.9vw;
+	margin-top:-1.9vh;
 }
 
 #topBlock
@@ -44,11 +44,11 @@ body
 	text-decoration: none;
 	font-size:1.3vw;
 	margin-right:1vw;
-	margin-top:-15px;
-	padding-top:5px;
+	margin-top:-2vw;
+	padding-top:1vw;
 	padding-left:1vw;
 	padding-right:1vw;
-	padding-bottom:12px;
+	padding-bottom:1vw;
 	font-family: MuseoSans-500,Helvetica,sans-serif;
 }
 #toplink:hover, #aboutButton:hover{
@@ -157,6 +157,21 @@ body
 	font-size: 3vw;
 	text-align: center;
 	margin-top: 9vw;
+}
+#redCol
+{
+	font-size:4vw;
+	color:red;
+}
+#redCo
+{
+	font-size:4vw;
+	color:red;
+}
+#redColor
+{
+	font-size:3vw;
+	color:red;
 }
 #sub-quote
 {

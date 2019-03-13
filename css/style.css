@@ -543,6 +543,21 @@ body{
 /*tablets*/
 @media screen and (max-width:950px)
 {
+	.skillBlock
+	{
+		height:53vw;
+		padding-top:2vw;
+		padding-bottom:5vw;
+		border-top:solid 2px;
+	}
+	.skillBlock p
+	{
+		font-size:4vw;
+	}
+	.skillBlock h2
+	{
+		font-size:4vw;
+	}
 	#showcase
 	{
 		height:100vh;
@@ -609,7 +624,7 @@ body{
 	    background:rgba(0, 0, 0, 0.1);
 	    padding:0 10px;
 	    height:4vw;
-	    line-height:3vw;
+	    line-height:4vw;
 	    border-bottom-left-radius:2px;
 	}
 	#aboutContent h1
@@ -625,7 +640,7 @@ body{
 	    width:130%;
 	    background:#eee;
 	    height:4vw;
-	    border-radius:3px;
+	    border-radius:4px;
 	    border: 1.2px solid #ccb;
 	}
 	.arrow

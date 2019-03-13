@@ -1,8 +1,10 @@
+
 body
 {
 	margin:0px;
 	color:black;
 	background-color:#F5F5F5;
+	display:grid;
 }
 #showcase
 {
@@ -193,10 +195,6 @@ body
   margin-left:-20px;
   width: 50px;
   height: 50px;
-
-  /**
-   * Dark Arrow Down
-   */
   background-image: url('../images/arrow.png');
   background-size: contain;
 }
@@ -216,26 +214,29 @@ body
     transform: translateY(-15px);
   }
 }
+
 /*ABOUT SECTION*/
-
-
 
 #aboutContent
 {
-  	height:110vw;
-  	margin:auto;
+  	
 	background-image: url('../images/wall1.jpg');
 	width:100%;
 	height:auto;
 	overflow:hidden;
 	margin-bottom:-1vw;
- 
   	background-position: center center;
   	background-repeat: no-repeat;
   	background-size: cover;
-	color:#3d4c61
-	font-size:1.3vw;
-	font-family: MuseoSans-500,Helvetica,sans-serif;
+}
+.passport
+{
+	display:grid;
+	grid-template-columns:repeat(3,1fr);
+	grid-gap:10px;  
+	grid-template-areas:
+		"title title title"
+		"aboutWord aboutWord aboutImage"
 }
 #school
 {
@@ -244,21 +245,28 @@ body
 
 #aboutContent h1
 {
+	grid-area:title;
 	width:100%;
 	margin:auto;
 	padding-top:2vw;
 	font-family: 'Permanent Marker', cursive;
 	text-align:center;
 	font-size:3vw;
+}
+#aboutContent p
+{
+	width:95%;
+	grid-area:aboutWord;
 	color:#3d4c61
+	font-size:1.3vw;
+	font-family: MuseoSans-500,Helvetica,sans-serif;
 }
 #profileImage
 {
-	float:left;
-	width:16vw;
+	grid-area:aboutImage;
+	width:20vw;
 	height:auto;
 	margin-top:3vw;
-	margin-left:14vw;
 	border-radius:4px;
     border: solid 2px #CCC;
     -moz-box-shadow: 10px 10px 0px #525252;
@@ -267,7 +275,7 @@ body
 }
 #skillBlock
 {
-	padding-top:10px;
+	padding-top:1vw;
 	height:29vw;
 	float:left;
 	width:33.33%;
@@ -289,7 +297,7 @@ body
 	float:left;
 	clear:both;
 }
-#skillImages p{
+#skillImages {
 	font-size:1.3vw;
 }
 #tech
@@ -512,4 +520,20 @@ body{
   	background-repeat: no-repeat;
   	background-size: cover;
   	padding-bottom: 2vw;
+}
+@media screen and (max-width:950px)
+{
+	.passport
+	{
+		grid-template-areas: 
+		"title title title"
+		"aboutImage aboutImage aboutImage"
+		"aboutWord aboutWord aboutWord" 
+	}
+	#profileImage
+	{
+		width:25vw;
+		margin:auto;
+		margin-top:3vw;
+	}
 }
